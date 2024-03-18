@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function open1() {
+        // 새창열기
+        window.open("14-2open.html");
+      }
+
+      function open2() {
+        // 새창열기
+        window.open("14-2open.html", "", "width=300, height=500, scrollbars=no, toolbar=no, menubar=no, status=no, location=no"); // "열릴페이지","제목","창설정" / 툴바=아이콘 로케이션=주소줄
+      }
+
+      function open3(url) {
+        // 새창열기
+        window.open(url, "mywin", "width=500, height=300, scrollbars=no, toolbar=no, menubar=no, status=no, location=no"); // "열릴페이지","제목","창설정" / 툴바=아이콘 로케이션=주소줄
+      }
+    </script>
+  </head>
+  <body>
+    <h1>window 객체</h1>
+    <h3>open 메소드</h3>
+    <div>
+      <a href="#" onclick="open1(); return false;">새창 열기</a><br />
+      <a href="#" onclick="open2(); return false;">팝업창 열기1</a><br />
+      <a href="#" onclick="open3('https://www.naver.com'); return false;">팝업창 열기2-1</a><br />
+      <a href="#" onclick="open3('http://www.daum.net'); return false;">팝업창 열기2-2</a><br />
+    </div>
+  </body>
+</html>

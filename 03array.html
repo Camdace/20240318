@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //after save array1~10 with 'for' grammar, print the total
+      var myArray1 = [];
+      var sum = 0;
+
+      //formula1 of save in array
+      for (var i = 1; i <= 10; i++) {
+        myArray1[i] = i;
+      }
+
+      //formula2 of save in array
+      //   for (var i = 1; i <= 10; i++) {
+      //     myArray1.push(i);
+      //   }
+
+      document.write(myArray1 + "<br>");
+
+      //sum formula1
+      //   for (var i = 0; i < myArray1.length; i++) {
+      //     sum += myArray1[i];
+      //   }
+
+      //sum formula2
+      myArray1.forEach((num) => {
+        sum += num;
+        document.write(sum + "\n");
+      });
+
+      document.write(sum);
+    </script>
+  </head>
+  <body></body>
+</html>

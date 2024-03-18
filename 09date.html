@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //날짜 임의 변경 1998.03.30 12:13:14
+      var mydate = new Date();
+
+      mydate.setFullYear(1998);
+      mydate.setMonth(2);
+      mydate.setDate(30);
+      mydate.setHours(12);
+      mydate.setMinutes(13);
+      mydate.setSeconds(14);
+
+      var yy = mydate.getFullYear();
+      var mm = mydate.getMonth() + 1;
+      var dd = mydate.getDate();
+      var day = mydate.getDay(); // day of the month
+      var hh = mydate.getHours();
+      var mi = mydate.getMinutes();
+      var ss = mydate.getSeconds();
+      document.write(yy + "년 " + mm + "월 " + dd + "일 " + hh + "시" + mi + "분" + ss + "초" + day + "<br/>");
+    </script>
+  </head>
+  <body></body>
+</html>

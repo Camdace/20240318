@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //split()메소드=파라미터로전달된 문자열을구분함
+      var str = "100,1";
+      var arr = str.split(",");
+
+      document.write(arr[0] + "<br>");
+      document.write(arr[1] + "<br>");
+
+      for (var i = 0; i < arr.length; i++) {
+        document.write(arr[i] + "<br>");
+      }
+
+      arr.forEach((element) => {
+        document.write(element + "<br>");
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

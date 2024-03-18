@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function getDday(y, m, d) {
+        var today = new Date(); //오늘날짜
+
+        var dday = new Date(y, m - 1, d);
+
+        //두 날짜 차이
+        var cnt = dday.getTime() - today.getTime();
+        var n = Math.ceil(cnt / (24 * 60 * 60 * 1000));
+        return n;
+      }
+
+      //수료까지 남은D계산
+      var date = new Date();
+      var y = date.getFullYear();
+      var dday = getDday(y, 12, 31);
+
+      document.write("dday : " + dday);
+    </script>
+  </head>
+  <body>
+    <div>
+      <a href="#" onclick="window.close()" ; return false;>창닫기</a>
+    </div>
+  </body>
+</html>

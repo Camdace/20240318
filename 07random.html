@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function random(n1, n2) {
+        return parseInt(Math.random() * (n2 - n1 + 1) + 1);
+      }
+
+      document.write(random(0, 9) + "<br>");
+
+      var num = random(0, 9);
+      document.write(num + "<br>");
+
+      var auth = "";
+      for (var i = 0; i < 5; i++) {
+        auth += random(0, 9);
+      }
+      document.write("인증번호" + auth + "<br>");
+    </script>
+  </head>
+  <body></body>
+</html>

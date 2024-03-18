@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //시간-시간
+      var theday = new Date(2024, 0, 1);
+      var today = new Date();
+      document.write(today + "<br>");
+
+      var cnt = today.getTime() - theday.getTime(); //미리세컨드로 환산됨
+      document.write(cnt + "<br>");
+
+      var day = Math.floor(cnt / (24 * 60 * 60 * 1000));
+      document.write(day + "<br>");
+
+      //하루 24*60*60*1000 = 86,400,000
+    </script>
+  </head>
+  <body></body>
+</html>

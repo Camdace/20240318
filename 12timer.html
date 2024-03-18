@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function printTime() {
+        var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        var mydate = new Date();
+
+        var yy = mydate.getFullYear();
+        var mm = mydate.getMonth() + 1;
+        var dd = mydate.getDate();
+        var i = mydate.getDay();
+        var day = days[i];
+        var hh = mydate.getHours();
+        var mi = mydate.getMinutes();
+        var ss = mydate.getSeconds();
+
+        result = yy + "-" + mm + "-" + dd + " " + day + "day" + hh + ":" + mm + ":" + ss;
+
+        document.getElementById("timer").innerHTML = result; // id속성값이 timer인 태그에 결과출력(= timer에 결과집어넣음)
+      }
+
+      function startTimer() {
+        setInterval(printTime, 1000);
+      }
+    </script>
+  </head>
+  <!-- 페이지실행시 onload실행됨 -->
+  <body onload="startTimer()">
+    <h1 id="timer"></h1>
+  </body>
+</html>
